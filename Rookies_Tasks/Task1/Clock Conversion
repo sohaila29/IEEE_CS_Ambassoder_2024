@@ -1,0 +1,29 @@
+import java.util.Scanner;
+ 
+public class TimeConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int tc = scanner.nextInt();
+        scanner.nextLine();  
+ 
+        while (tc-- > 0) {
+            String time = scanner.nextLine();
+            int h = Integer.parseInt(time.substring(0, 2));
+            int m = Integer.parseInt(time.substring(3, 5));
+            String shift = " AM";
+ 
+            if (h == 0) {
+                h = 12;
+            } else if (h == 12) {
+                shift = " PM";
+            } else if (h > 12) {
+                h -= 12;
+                shift = " PM";
+            }
+ 
+            System.out.printf("%02d:%02d%s\n", h, m, shift);
+        }
+ 
+        scanner.close();
+    }
+}
