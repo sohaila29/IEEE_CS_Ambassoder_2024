@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Mavenproject1 {
+ 
+    public static void main(String[] args) {
+ 
+       Scanner input = new Scanner(System.in);
+        
+        int n = input.nextInt();
+        ////////////////////////
+        int[] arr; 
+        arr  = new int[n];
+        ////////////////////////
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        //////////////////////
+     for(int i = 0; i < n; i++){
+         int size = arr[i] * 2;
+        for (int j = 0; j < size; j++) {
+            for (int k = 0; k < size; k++) {
+                if ((j / 2 + k / 2) % 2 == 0) {
+                        System.out.print("#");
+                    } else {
+                        System.out.print(".");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+}  
