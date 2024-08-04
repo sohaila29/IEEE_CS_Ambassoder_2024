@@ -1,0 +1,36 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class AsphaltedDays {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int n = input.nextInt();
+        int totalDays = n * n;
+
+        int[][] schedule = new int[totalDays][2];
+        for (int i = 0; i < totalDays; i++) {
+            schedule[i][0] = input.nextInt();
+            schedule[i][1] = input.nextInt();
+        }
+
+        Set<Integer> horizontalAsphalted = new HashSet<>();
+        Set<Integer> verticalAsphalted = new HashSet<>();
+        StringBuilder resultDays = new StringBuilder();
+
+        for (int day = 0; day < totalDays; day++) {
+            int h = schedule[day][0];
+            int v = schedule[day][1];
+
+            if (!horizontalAsphalted.contains(h) && !verticalAsphalted.contains(v)) {
+                horizontalAsphalted.add(h);
+                verticalAsphalted.add(v);
+                resultDays.append(day + 1).append(" ");
+            }
+        }
+
+        System.out.println(resultDays.toString().trim());
+        
+    }
+}
