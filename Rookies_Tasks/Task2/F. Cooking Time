@@ -1,0 +1,37 @@
+import java.util.*;
+import java.util.Scanner;
+public class Mavenproject1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int T = input.nextInt();
+        for (int t = 0; t < T; t++) {
+            int n = input.nextInt();
+            int k = input.nextInt();
+            int[] ingredients = new int[n];
+            for (int i = 0; i < n; i++) {
+                ingredients[i] = input.nextInt();
+            }
+
+            Set<Integer> outside = new HashSet<>();
+            int fridgeOpens = 0;
+
+            for (int ingredient : ingredients) {
+                if (!outside.contains(ingredient)) {
+                    if (outside.size() == k) {
+                       
+                        Iterator<Integer> it = outside.iterator();
+                        if (it.hasNext()) {
+                            it.next();
+                            it.remove();
+                        }
+                    }
+                    outside.add(ingredient);
+                    fridgeOpens++;
+                }
+            }
+
+            System.out.println(fridgeOpens);
+        }
+}
+    }
