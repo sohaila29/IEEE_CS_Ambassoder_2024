@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        int n = input.nextInt(); 
+        int m = input.nextInt();  
+        int a = input.nextInt();  
+        int b = input.nextInt(); 
+
+        
+        int costUsingSTs = n * a;
+        int costUsingMTs = (n / m) * b + Math.min((n % m) * a, b);
+        
+        int minCost = Math.min(costUsingSTs, costUsingMTs);
+        
+      
+        System.out.println(minCost);
+
+        
+    }
+}
