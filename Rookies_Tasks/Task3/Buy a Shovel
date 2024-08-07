@@ -1,0 +1,18 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int k = input.nextInt(); 
+        int r = input.nextInt();
+        
+        
+        for (int i = 1; i <= 1000; i++) {
+            int total = i * k;
+            if (total % 10 == 0 || total % 10 == r) {
+                System.out.println(i);
+                return;
+            }
+        }
+    }
+}
