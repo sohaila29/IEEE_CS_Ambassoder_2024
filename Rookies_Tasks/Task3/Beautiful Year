@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int year = input.nextInt();
+       
+ 
+        while (true) {
+            year++;
+            if (Digits(year)) {
+                System.out.println(year);
+                break;
+            }
+        }
+    }
+ 
+    public static boolean Digits(int n) {
+        boolean[] digits = new boolean[10];
+        while (n > 0) {
+            int digit = n % 10;
+            if (digits[digit]) {
+                return false;
+            }
+            digits[digit] = true;
+            n /= 10;
+        }
+        return true;
+    }
+}
