@@ -1,0 +1,46 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] arr1 = new int[n];
+        int[] arr2 = new int[n];
+        boolean isRated = false;
+        boolean isUnrated = false;
+        
+        for (int i = 0; i < n; i++) {
+            arr1[i] = input.nextInt();
+            arr2[i] = input.nextInt();
+        }
+        
+        
+       
+        for (int i = 0; i < n; i++) {
+            if (arr1[i] != arr2[i]) {
+                isRated = true;
+                break;
+            }
+        }
+        
+        if (isRated) {
+            System.out.println("rated");
+            return;
+        }
+        
+       
+        
+        for (int i = 0; i < n - 1; i++) {
+            if (arr1[i] < arr1[i + 1]) {
+                isUnrated = true;
+                break;
+            }
+        }
+        
+        if (isUnrated) {
+            System.out.println("unrated");
+        } else {
+            System.out.println("maybe");
+        }
+    }
+}
