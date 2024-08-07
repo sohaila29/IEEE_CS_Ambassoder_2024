@@ -1,0 +1,19 @@
+import java.util.Scanner;
+ 
+public class Task{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        String sentence = input.next();
+        boolean isPangram = true;
+        
+        for (char i = 'a'; i <= 'z'; i++) {
+            if (!sentence.toLowerCase().contains(String.valueOf(i))) {
+                isPangram = false;
+                break;
+            }
+        }
+ 
+        System.out.println(isPangram ? "YES" : "NO");
+    }
+}
