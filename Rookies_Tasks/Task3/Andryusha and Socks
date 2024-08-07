@@ -1,0 +1,32 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] order = new int[2 * n];
+        int[] count = new int[n + 1];
+        int maxSocks = 0;
+        int currentSocks = 0;
+        
+        for (int i = 0; i < 2 * n; i++) {
+            order[i] = input.nextInt();
+        }
+       
+ 
+        
+ 
+        for (int i = 0; i < 2 * n; i++) {
+            int pair = order[i];
+            if (count[pair] == 0) {
+                currentSocks++;
+                count[pair] = 1;
+            } else {
+                currentSocks--;
+            }
+            maxSocks = Math.max(maxSocks, currentSocks);
+        }
+ 
+        System.out.println(maxSocks);
+    }
+}
