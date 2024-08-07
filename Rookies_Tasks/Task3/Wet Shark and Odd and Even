@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int n = input.nextInt();
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = input.nextInt();
+        }
+        
+        
+        long totalSum = 0;
+        int minOdd = Integer.MAX_VALUE;
+ 
+        for (int i = 0; i < n; i++) {
+            totalSum += nums[i];
+            if (nums[i] % 2 != 0 && nums[i] < minOdd) {
+                minOdd = nums[i];
+            }
+        }
+ 
+        if (totalSum % 2 != 0) {
+            totalSum -= minOdd;
+        }
+ 
+        System.out.println(totalSum);
+    }
+}
