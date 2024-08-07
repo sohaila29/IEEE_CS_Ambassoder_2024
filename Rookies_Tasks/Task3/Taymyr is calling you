@@ -1,0 +1,23 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int m = input.nextInt();
+        int z = input.nextInt();
+        
+ 
+        
+        int leastCM = n;
+        while (leastCM % m != 0) {
+            leastCM += n;
+        }
+ 
+        
+        int count = z / leastCM;
+ 
+        
+        System.out.println(count);
+    }
+}
