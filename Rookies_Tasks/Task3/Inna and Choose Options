@@ -1,0 +1,61 @@
+import java.util.Scanner;
+ 
+public class Task {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int t = input.nextInt();
+        input.nextLine(); 
+        
+        for (int i = 0; i < t; i++) {
+            String cards = input.nextLine();
+            checkGrid(cards);
+        }
+        
+        
+    }
+ 
+    private static void checkGrid(String cards) {
+        
+        int[] rows = {1, 2, 3, 4, 6, 12};
+        int[] cols = {12, 6, 4, 3, 2, 1};
+        
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = 0; i < rows.length; i++) {
+            int a = rows[i];
+            int b = cols[i];
+            if (isValidConfiguration(cards, a, b)) {
+                if (result.length() > 0) {
+                    result.append(" ");
+                }
+                result.append(a).append("x").append(b);
+            }
+        }
+        
+        if (result.length() > 0) {
+            
+            int count = result.toString().split(" ").length;
+            System.out.println(count + " " + result);
+        } else {
+            System.out.println(0);
+        }
+    }
+ 
+    private static boolean isValidConfiguration(String cards, int rows, int cols) {
+        
+        for (int col = 0; col < cols; col++) {
+            boolean all = true;
+            for (int row = 0; row < rows; row++) {
+                if (cards.charAt(row * cols + col) != 'X') {
+                    all = false;
+                    break;
+                }
+            }
+            if (all) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
