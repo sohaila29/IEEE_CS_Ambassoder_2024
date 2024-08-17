@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> </title>
+        <meta name="description" content="This Is Our Book Store"/>
+    </head>
+    <body>
+        <form  method="get">
+            <div>
+                <label>Token</label>
+                <input type="hidden"
+                    name="Token"
+                    value="b92f1fc2fce391ad7af633723afd3055" >
+            </div>
+            <hr>
+            <div>
+                <label>Email</label><br>
+                <input type="email" 
+                    required
+                    placeholder=" Write A Valid Email" 
+                    name="Email"
+                    readonly
+                    value="o@o.com">
+            </div>
+            <hr>
+            <div>
+                <label>Username</label><br/>
+                <input type="text"
+                    placeholder="Username"
+                    name="Username" 
+                    autofocus
+                    required
+                    minlength="5"
+                    maxlength="20">
+            </div>
+            <hr>
+            <div>
+                <h3>skills</h3>
+                <input type="checkbox" id="ps" value="Problem Solving" checked name="skills">
+                <label for="ps">Problem Solving</label><br>
+                <input type="checkbox" id="lt" value="Logical Thinking" name="skills">
+                <label for="lt">Logical Thinking</label><br>
+                <input type="checkbox" id="as" value="Advanced Search" name="skills">
+                <label for="as">Advanced Search</label><br>
+                <input type="checkbox" id="ap" value=" Analysis Planning" name="skills">
+                <label for="ap"> Analysis Planning</label><br>
+            </div>
+            <hr>
+            <div>
+                <h3>job</h3>
+                <input type="radio" id="fd" value="Front-End Developer" checked name="job">
+                <label for="fd">Front-End Developer</label><br>
+                <input type="radio" id="bd" value="Back-End Developer" name="job">
+                <label for="bd">Back-End Developer</label><br>
+                <input type="radio" id="ba" value="Business Analyst" name="job">
+                <label for="ba">Business Analyst</label><br>
+                <input type="radio" id="pm" value="Project Manager" name="job">
+                <label for="pm">Project Manager</label><br>
+                <input type="radio" id="sm" value="Scrum Master" name="job">
+                <label for="sm">Scrum Master</label><br>
+            </div>
+            <hr>
+            <div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Empty">
+            </div>
+            
+        </form>
+
+    </body>
+
+</html> 
