@@ -1,0 +1,12 @@
+div.title,
+div p{
+    color: green;
+}
+
+div span.title {
+   color: blue;
+}
+ 
+div div span.title{
+    color: red ;
+}
