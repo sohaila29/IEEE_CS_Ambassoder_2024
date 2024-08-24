@@ -1,0 +1,41 @@
+.all{
+  width: 800px;
+  font-weight: bold;
+  background-color: rgb(238, 238, 238); 
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+.one,
+.two,
+.three,
+.four{
+  padding: 15px;
+  background-color: rgb(179, 179, 179); 
+  float: left;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 15px;
+   
+}
+.one{
+  margin-top: 15px;
+  width: calc(96.25% - 30px );
+  text-transform: capitalize;
+  
+}
+.two{
+  width: calc(30.83% - 30px);
+  white-space: nowrap;
+}
+.three{
+  width: calc(47.1875% - 30px);
+  white-space: nowrap;
+}
+.four{
+  width: calc(22.65625% - 30px);
+  white-space: nowrap;
+}
