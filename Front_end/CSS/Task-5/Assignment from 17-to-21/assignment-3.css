@@ -1,0 +1,26 @@
+/* 1 */
+div{
+  padding: 10px;
+  width: 400px;
+  background-color: #eee;
+  white-space: normal;
+  word-break: normal;
+}
+/* 2 */
+div{
+  padding: 10px;
+  width: 400px;
+  background-color: #eee;
+  white-space: normal;
+  word-break: normal;
+}
+/* 3*/
+div{
+  padding: 10px;
+  width: 400px;
+  background-color: #eee;
+  white-space: nowrap;
+  word-break: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
