@@ -1,0 +1,76 @@
+.all{
+  width: 400px;
+  margin: auto;
+}
+
+li{
+  background-color: #EEE;
+  margin-bottom: 20px;
+   padding: 10px;
+}
+
+.list-one,
+.list-two,
+.list-three{
+  list-style: none;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight{
+  background-color: white;
+  margin-bottom: 7px;
+}
+
+.seven,
+.eight{
+  list-style-position: inside;
+}
+.html,
+.css,
+.javascript{
+  margin-top: 8px;
+}
+************************************************************
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        
+
+    </head>
+    <body>
+      <ul class="all">
+        <li class="list-one">
+          HTML
+          <ol class="html" start="10">
+            <li class="one">Slim</li>
+            <li class="two">Pugjs</li>
+            <li class="three">HAML</li>
+          </ol>
+        </li>
+        <li class="list-two">
+          CSS
+          <ol class="css" type="I" start="10">
+            <li class="four">SASS</li>
+            <li class="five">LESS</li>
+            <li class="six">PostCSS</li>
+          </ol>
+        </li>
+        <li class="list-three">
+          JavaScript
+          <ul class="javascript">
+            <li class="seven">Vuejs</li>
+            <li class="eight">Sveltejs</li>
+          </ul>
+        </li>
+      </ul>
+    </body>
+</html>
