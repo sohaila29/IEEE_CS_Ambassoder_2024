@@ -1,0 +1,28 @@
+p{
+  background-color: #eee;
+  margin: 40px auto;
+  width: 400px;
+  padding: 20px;
+  border-right: 5px solid red;
+  font-size: 20px;
+  position: relative;
+  counter-increment: members-count;
+}
+p::before{
+  content: counter(members-count);
+  background-color: red;
+  color: white;
+  width: 60px;
+  height: 48px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left: -60px;
+  margin-top: -62px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 15px;
+  
+
+}
