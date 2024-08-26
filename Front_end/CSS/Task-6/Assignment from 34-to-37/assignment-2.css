@@ -1,0 +1,24 @@
+div::first-letter{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin-left: -35px;
+  margin-right: 10px;
+  
+  
+}
+div{
+  margin: 30px auto;
+  background-color: #eee;
+  width: 350px;
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+  
+}
