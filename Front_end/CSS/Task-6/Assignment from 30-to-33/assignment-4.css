@@ -1,0 +1,112 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+table{
+  display: table;
+  margin: auto;
+  width: 700px;
+  text-align: center;
+  border-spacing: 2px;
+}
+div {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+td{
+  background-color: #eee;
+  padding: 10px 20px;
+}
+table thead th{
+  background-color: rgb(64, 64, 64);
+  color: white;
+  padding: 15px;
+}
+.red{
+  background-color: rgb(233, 30, 99);
+  color: white;
+  padding: 5px 8px;
+}
+.blue{
+  background-color: rgb(4, 170, 244);
+  color: white;
+  padding: 5px 8px;
+}
+*******************************************
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        
+
+    </head>
+    <body>
+      <table>
+        <thead>
+          <th>Avatar</th>
+          <th>Group</th>
+          <th>Name</th>
+          <th>Points</th>
+          <th>Control</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <img src="CSS/imgs/avatar2.jpg" alt="" width="70px" height="70px"></td>
+            <td>Ninja</td>
+            <td>ahmed mohamed</td>
+            <td>120</td>
+            <td>  <div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="CSS/imgs/avatar2.jpg" alt="" width="70px" height="70px"></td>
+            <td rowspan="2">shades</td>
+            <td>shady nabil</td>
+            <td>180</td>
+            <td><div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="CSS/imgs/avatar1.jpg" alt="" width="70px" height="70px"></td>
+            <td>emen mohamed</td>
+            <td>160</td>
+            <td><div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="CSS/imgs/avatar2.jpg" alt="" width="70px" height="70px"></td>
+            <td rowspan="2"> valhala</td>
+            <td>mohamed ibrahim</td>
+            <td>190</td>
+            <td><div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="CSS/imgs/avatar1.jpg" alt="" width="70px" height="70px"></td>
+            <td>noor atef</td>
+            <td>110</td>
+            <td><div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="CSS/imgs/avatar2.jpg" alt="" width="70px" height="70px"></td>
+            <td>union</td>
+            <td>mohamed adel</td>
+            <td>90</td>
+            <td><div class="blue">view</div>
+                  <div class="red">delete</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+</html>
