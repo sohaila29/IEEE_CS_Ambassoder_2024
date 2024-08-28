@@ -1,24 +1,41 @@
-div::first-letter{
-  background-color: red;
-  color: white;
-  padding: 10px;
-  font-size: 25px;
-  position: relative;
-  display: inline-block;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  margin-left: -35px;
-  margin-right: 10px;
-  
-  
-}
-div{
-  margin: 30px auto;
-  background-color: #eee;
-  width: 350px;
-  padding: 20px;
-  font-size: 20px;
-  position: relative;
-  
-}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        <style>
+            div::first-letter{
+              background-color: red;
+              color: white;
+              padding: 10px;
+              font-size: 25px;
+              position: relative;
+              display: inline-block;
+              position: absolute; 
+              top: 0; 
+              left: 0; 
+              margin-left: -35px;
+              margin-right: 10px;
+              
+              
+            }
+            div{
+              margin: 30px auto;
+              background-color: #eee;
+              width: 350px;
+              padding: 20px;
+              font-size: 20px;
+              position: relative;
+              
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>1 Hello, Welcome To Elzero Web School</div>
+    </body>
+        
+           
+</html>
