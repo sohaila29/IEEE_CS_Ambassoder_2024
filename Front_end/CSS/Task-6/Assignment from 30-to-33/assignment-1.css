@@ -31,3 +31,18 @@ div {
   top: 40px;
   left: 20px;
 }
+*****************************************
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        
+    </head>
+    <body>
+      <div class="green"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="black"></div>
+</html>
