@@ -1,4 +1,11 @@
-div {
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        <style>
+            div {
   width: 400px;
   height: 115px;
   margin:  50px auto;
@@ -50,14 +57,7 @@ div span{
 .top-right{
    border-left: 3px solid red;
 }
-************************************8
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>CSS</title>
-        <link rel="stylesheet" href="css/master.css">
-        
+        </style>
     </head>
     <body>
         <div>
@@ -70,3 +70,6 @@ div span{
             <span class="bottom-right">4</span>
         </div>
 </html>
+
+  
+        
