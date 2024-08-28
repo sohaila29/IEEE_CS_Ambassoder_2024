@@ -1,49 +1,51 @@
-.all{
-  width: 400px;
-  margin: auto;
-}
 
-li{
-  background-color: #EEE;
-  margin-bottom: 20px;
-   padding: 10px;
-}
 
-.list-one,
-.list-two,
-.list-three{
-  list-style: none;
-}
-
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight{
-  background-color: white;
-  margin-bottom: 7px;
-}
-
-.seven,
-.eight{
-  list-style-position: inside;
-}
-.html,
-.css,
-.javascript{
-  margin-top: 8px;
-}
-************************************************************
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>CSS</title>
         <link rel="stylesheet" href="css/master.css">
-        
+        <style>
+          .all{
+            width: 400px;
+            margin: auto;
+          }
+          
+          li{
+            background-color: #EEE;
+            margin-bottom: 20px;
+             padding: 10px;
+          }
+          
+          .list-one,
+          .list-two,
+          .list-three{
+            list-style: none;
+          }
+          
+          .one,
+          .two,
+          .three,
+          .four,
+          .five,
+          .six,
+          .seven,
+          .eight{
+            background-color: white;
+            margin-bottom: 7px;
+          }
+          
+          .seven,
+          .eight{
+            list-style-position: inside;
+          }
+          .html,
+          .css,
+          .javascript{
+            margin-top: 8px;
+          }
+        </style>
 
     </head>
     <body>
