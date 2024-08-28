@@ -1,26 +1,80 @@
 /* 1 */
-div{
-  padding: 10px;
-  width: 400px;
-  background-color: #eee;
-  white-space: normal;
-  word-break: normal;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <style>
+      div {
+        padding: 10px;
+        width: 400px;
+        background-color: #eee;
+        white-space: normal;
+        word-break: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea itaque fugit
+      vitae incidunt quis dolores? Id alias eveniet sequi perspiciatis iusto
+      impedit, accusamus maxime reprehenderit blanditiis adipisci sapiente hic
+      velit.
+    </div>
+  </body>
+</html>
+*****************************************
 /* 2 */
-div{
-  padding: 10px;
-  width: 400px;
-  background-color: #eee;
-  white-space: normal;
-  word-break: normal;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <style>
+      div{
+        padding: 10px;
+        width: 400px;
+        background-color: #eee;
+        white-space: normal;
+        word-break: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur
+    </div>
+  </body>
+</html>
+*****************************************
 /* 3*/
-div{
-  padding: 10px;
-  width: 400px;
-  background-color: #eee;
-  white-space: nowrap;
-  word-break: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <style>
+      div {
+        padding: 10px;
+        width: 400px;
+        background-color: #eee;
+        white-space: nowrap;
+        word-break: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea itaque fugit
+      vitae incidunt quis dolores? Id alias eveniet sequi perspiciatis iusto
+      impedit, accusamus maxime reprehenderit blanditiis adipisci sapiente hic
+      velit.
+    </div>
+  </body>
+</html>
+
