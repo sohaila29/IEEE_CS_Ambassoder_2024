@@ -1,47 +1,48 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-  font-size: 15px;
-}
-table{
-  display: table;
-  margin: auto;
-  width: 700px;
-  text-align: center;
-  border-spacing: 2px;
-}
-div {
-    display: inline-block;
-    margin-right: 3px;
-}
 
-td{
-  background-color: #eee;
-  padding: 10px 20px;
-}
-table thead th{
-  background-color: rgb(64, 64, 64);
-  color: white;
-  padding: 15px;
-}
-.red{
-  background-color: rgb(233, 30, 99);
-  color: white;
-  padding: 5px 8px;
-}
-.blue{
-  background-color: rgb(4, 170, 244);
-  color: white;
-  padding: 5px 8px;
-}
-*******************************************
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>CSS</title>
         <link rel="stylesheet" href="css/master.css">
-        
+        <style>
+          body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            font-size: 15px;
+          }
+          table{
+            display: table;
+            margin: auto;
+            width: 700px;
+            text-align: center;
+            border-spacing: 2px;
+          }
+          div {
+              display: inline-block;
+              margin-right: 3px;
+          }
+          
+          td{
+            background-color: #eee;
+            padding: 10px 20px;
+          }
+          table thead th{
+            background-color: rgb(64, 64, 64);
+            color: white;
+            padding: 15px;
+          }
+          .red{
+            background-color: rgb(233, 30, 99);
+            color: white;
+            padding: 5px 8px;
+          }
+          .blue{
+            background-color: rgb(4, 170, 244);
+            color: white;
+            padding: 5px 8px;
+          }
+        </style>
 
     </head>
     <body>
