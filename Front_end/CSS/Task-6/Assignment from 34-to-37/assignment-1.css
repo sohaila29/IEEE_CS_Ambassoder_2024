@@ -1,15 +1,34 @@
-div:empty{
-  background-color: red;
-}
-div{
-  width: 300px;
-  height: 60px;
-  margin: auto;
-  margin-top: 53px;
-  font-size: 20px;
-  text-align: center;
-  padding: 10px;
-  background-color: #eee;
-  line-height: 2.5;
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="css/master.css">
+        <style>
+            div:empty{
+                background-color: red;
+                }
+                div{
+                width: 300px;
+                height: 60px;
+                margin: auto;
+                margin-top: 53px;
+                font-size: 20px;
+                text-align: center;
+                padding: 10px;
+                background-color: #eee;
+                line-height: 2.5;
   
-}
+                }
+        </style>
+
+    </head>
+    <body>
+        <div>One</div>
+        <div></div>
+        <div>Three</div>
+    </body>
+        
+           
+</html>
