@@ -1,9 +1,24 @@
-.one{
-  text-transform: uppercase;
-}
-.two{
-  text-transform:capitalize
-}
-.three{
-  text-transform:lowercase
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <style>
+      .one {
+        text-transform: uppercase;
+      }
+      .two {
+        text-transform: capitalize;
+      }
+      .three {
+        text-transform: lowercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one">elzero Web school</p>
+    <p class="two">elzero Web school</p>
+    <p class="three">elzero Web school</p>
+  </body>
+</html>
