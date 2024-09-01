@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+div {
+  background-color: #eee;
+  text-align: center;
+  width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  position: relative;
+  border-left: 7px solid red;
+  border-right: 7px solid rgb(103, 58, 183);
+}
+div::first-letter {
+  color: rgb(244, 67, 54);
+}
+div::before,
+div::after {
+  content: " ";
+  position: absolute;
+  left: -6.8px;
+  width: 102%;
+  height: 7px;
+  background-color: red;
+  background-image: linear-gradient(
+    to right,
+    red 20%,
+    rgb(33, 150, 243) 20%,
+    rgb(33, 150, 243) 40%,
+    rgb(76, 175, 80) 40%,
+    rgb(76, 175, 80) 60%,
+    rgb(233, 30, 99) 60%,
+    rgb(233, 30, 99) 80%,
+    rgb(103, 58, 183) 80%
+  );
+}
+div::before {
+  top: -5px;
+}
+div::after {
+  top: 80px;
+}
